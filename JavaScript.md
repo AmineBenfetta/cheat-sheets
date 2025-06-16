@@ -104,3 +104,51 @@ personne.parler();
 
 ---
 
+## 🔄 Manipulation du DOM
+
+###  Accès aux éléments
+
+```js
+document.querySelector("h1")
+document.getElementById("monId")
+```
+
+###  Modifier le contenu
+
+```js
+el.textContent = "Nouveau texte";
+el.classList.add("visible");
+```
+
+###  Écouter un événement
+
+```js
+el.addEventListener("click", () => {
+  console.log("Clic !");
+});
+```
+
+---
+
+## 🚀 Asynchrone (async / await)
+
+###  Exemple simple
+
+```js
+async function charger() {
+  let reponse = await fetch("/data.json");
+  let data = await reponse.json();
+  console.log(data);
+}
+```
+
+---
+
+## 🔧 Outils pratiques
+
+```js
+console.log("info");
+console.error("erreur");
+JSON.stringify(objet) // convertir en texte JSON
+JSON.parse(jsonTexte) // convertir en objet
+```
