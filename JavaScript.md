@@ -53,3 +53,54 @@ while (condition) {
 
 ---
 
+## 🎯 Fonctions
+
+###  Fonctions simples
+
+```js
+function direBonjour(nom) {
+  return "Bonjour " + nom;
+}
+```
+
+###  Fonctions fléchées
+
+```js
+const direBonjour = (nom) => "Bonjour " + nom;
+```
+
+###  Paramètres par défaut
+
+```js
+function saluer(nom = "inconnu") {
+  console.log("Salut " + nom);
+}
+```
+
+---
+
+## 📆 Tableaux et Objets
+
+###  Tableaux
+
+```js
+let fruits = ["pomme", "banane"];
+console.log(fruits[0]);
+fruits.push("orange");
+```
+
+###  Objets
+
+```js
+let personne = {
+  nom: "Bob",
+  age: 40,
+  parler() {
+    console.log("Salut je suis " + this.nom);
+  }
+};
+personne.parler();
+```
+
+---
+
